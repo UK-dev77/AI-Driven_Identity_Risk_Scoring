@@ -1,0 +1,180 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dbe6f6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CARD ---------- */
+.container.center {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- INPUT ---------- */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3);
+  outline: none;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* ---------- SECOND BUTTON ---------- */
+button#showPassword {
+  background: #6c757d;
+}
+
+button#showPassword:hover {
+  background: #495057;
+}
+
+/* ---------- LOGOUT ---------- */
+.logout {
+  background: #dc3545;
+}
+
+.logout:hover {
+  background: #a71d2a;
+}
+
+/* ---------- MESSAGE ---------- */
+#riskResult {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ---------- DASHBOARD LAYOUT FIX ---------- */
+
+body.dashboard {
+  display: block;
+  padding: 20px;
+}
+
+.dashboard-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header alignment */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Buttons spacing */
+.dashboard-actions button {
+  margin-left: 10px;
+}
+
+/* Improve table spacing */
+.table-container {
+  margin-top: 10px;
+}
+/* ---------- TABLE ---------- */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;   /* ✅ enables horizontal scroll */
+}
+
+/* Make table wide enough */
+table {
+  min-width: 1300px;   /* ✅ IMPORTANT (prevents column hiding) */
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Prevent text breaking */
+th, td {
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;   /* ✅ VERY IMPORTANT */
+}
+
+/* Header style */
+th {
+  background: #007bff;
+  color: white;
+}
+
+/* Row styles */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #eef4ff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+  body {
+    align-items: flex-start;
+  }
+
+  .container.center {
+    margin-top: 40px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

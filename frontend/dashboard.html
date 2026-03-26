@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeroTrustIQ Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<div class="dashboard-wrapper">
+
+  <div class="dashboard-header">
+    <h2>AI Risk Monitoring Dashboard</h2>
+
+    <div class="dashboard-actions">
+      <button onclick="loadLogs()">Refresh</button>
+      <button onclick="logout()" class="logout">Logout</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>IP</th>
+          <th>Location</th>
+          <th>Device</th>
+          <th>OS</th>
+          <th>Browser</th>
+          <th>Hour</th>
+          <th>Date & Time</th>
+          <th>Risk</th>
+          <th>Score</th>
+          <th>Reasons</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody id="logTable"></tbody>
+
+    </table>
+  </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
